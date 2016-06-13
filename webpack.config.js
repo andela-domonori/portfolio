@@ -10,7 +10,7 @@ module.exports = {
     publicPath: '/assets/',
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.styl']
   },
   module: {
     loaders: [
@@ -28,8 +28,8 @@ module.exports = {
         loader: 'json',
       },
       {
-        test: /\.s?css$/,
-        loader: 'style!css!sass',
+        test: /\.styl$/,
+        loader: 'style-loader!css-loader!stylus-loader',
       },
       {
         test: /\.(gif|png)$/,
