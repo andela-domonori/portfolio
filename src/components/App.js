@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import Header from './Header'
-import LandingPage from './LandingPage'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
   return (
     <div id="container">
       <Header />
-      <LandingPage />
+      { this.props.children }
+      <Footer />
     </div>)
   }
 }

@@ -1,16 +1,17 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
+import { Link } from 'react-router'
 
-class  Header extends Component {
+class Header extends Component {
   render() {
     return (
       <div id="header">
         Breadface
         <hr />
         <div id="nav-list">
-          <button className="nav-button">Portfolio</button>
-          <button className="nav-button">Articles</button>
-          <button className="nav-button">About me</button>
-          <button className="nav-button">Contact me</button>
+          <Link to="/" className="nav-button">Portfolio</Link>
+          <Link to="articles" className="nav-button">Articles</Link>
+          <Link to="about" className="nav-button">About me</Link>
+          <Link to="contact" className="nav-button">Contact me</Link>
         </div>
       </div>
     )
