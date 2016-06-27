@@ -1,5 +1,7 @@
 'use strict'
+
 let path = require('path')
+let ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: ['babel-polyfill', './src/app.js'],
@@ -7,7 +9,7 @@ module.exports = {
   output: {
     path: __dirname + '/build',
     filename: 'bundle.js',
-    publicPath: '/assets/',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.styl']

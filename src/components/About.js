@@ -5,12 +5,16 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Grid>
+        <Grid fluid>
           <Row>
-            <Col md={6}>Image
-              <img className="about-image" src="./../../images/jesmine.png" />
+            <Col md={6}>
+              <div id="about-image-container">
+                <img className="about-image" src={require("./../../images/jesmine.jpg")} />
+              </div>
             </Col>
-            <Col md={4}>Personal information</Col>
+            <Col md={6}>
+              <div id="personal-info">Damilola Jesmine Omonori</div>
+            </Col>
           </Row>
         </Grid>
       </div>

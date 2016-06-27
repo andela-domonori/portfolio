@@ -1,31 +1,89 @@
+$default-green = #5FB57D
+$nav-button = #F79482
+$background-white = #F9F9F9
+
+@font-face
+  font-family: dymaxion
+  font-style: normal
+  src: url(./fonts/dymaxion.ttf) format('truetype')
+
+//Main page lagyout
 #container
-  background: blue
+  background: $background-white
   text-align: center
   margin: 0 auto
   width: 80%
 
-#header
-  background: white
+//Header style
+#header-name
+  font-family: dymaxion
+  padding: 20px 0
+  border-bottom: 1px solid #9B9B9B
+  margin-bottom: 5px
+  color: $default-green
 
 #nav-list
   padding: 15px 0 50px
+  display: inline-flex
+
+.nav-link
+  background: $nav-button
+  color: white
+  border: 1px solid $nav-button
 
 .nav-button
-  color: #9ace9a
+  display: block
+  color: $default-green
+  width: 110px
   margin: 5px 20px
-  padding: 5px 30px
-  border: 1px solid #9ace9a
+  padding: 3px 0
+  border: 1px solid $default-green
   background: white
   border-radius: 5px
-  text-decoration: none
+  text-decoration: none !important
   &:focus
-    background: pink
-    color: white
-    border: 1px solid pink
+    @extend .nav-link
+  &:hover
+    @extend .nav-link
+
+.class-with-pad
+  position: relative
+  height: 100%
+  img
+    width: 100%
+    height: 100%
+
 
 .portfotio-grid
-  background: red
+  width: 100px
+  height: 300px
+
+
+.portfolio-overlay
+  color: white
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 30%
+  background-color: $default-green
+  opacity: 0.8
+  &:hover
+    height: 90%
+    -webkit-transition-duration: .7s
+    -moz-transition-duration: .7s
+    -o-transition-duration: .7s
+    transition-duration: .7s
+
+#personal-info
+  background-color: #FFFFFF
+
+#about-image-container
+  background: #FFFFFF
+  padding: 10px
+  width: 70%
+  height: 100%
 
 .about-image
-  width: 100px
-  height: 100px
+  width: 100%
+  height: 100%

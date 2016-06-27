@@ -4,9 +4,8 @@ import { Link } from 'react-router'
 class Header extends Component {
   render() {
     return (
-      <div id="header">
-        Breadface
-        <hr />
+      <div>
+        <div id="header-name">Breadface</div>
         <div id="nav-list">
           <Link to="/" className="nav-button">Portfolio</Link>
           <Link to="articles" className="nav-button">Articles</Link>
