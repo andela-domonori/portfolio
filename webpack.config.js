@@ -12,7 +12,7 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.styl']
+    extensions: ['', '.js', '.jsx', '.scss']
   },
   module: {
     loaders: [
@@ -30,8 +30,8 @@ module.exports = {
         loader: 'json',
       },
       {
-        test: /\.styl$/,
-        loader: 'style-loader!css-loader!stylus-loader',
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       },
       {
         test: /\.css$/,
@@ -61,4 +61,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new ExtractTextPlugin('build/style.css', {
+      allChunks: true
+    })
+  ]
 }

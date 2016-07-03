@@ -7,7 +7,7 @@ class Header extends Component {
       <div>
         <div id="header-name">Breadface</div>
         <div id="nav-list">
-          <Link to="/" className="nav-button">Portfolio</Link>
+          <Link to="/" className={`nav-button ${this.props.active ? 'active': ''}`}>Portfolio</Link>
           <Link to="articles" className="nav-button">Articles</Link>
           <Link to="about" className="nav-button">About me</Link>
           <Link to="contact" className="nav-button">Contact me</Link>

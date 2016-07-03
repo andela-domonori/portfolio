@@ -7,13 +7,21 @@ class About extends Component {
       <div>
         <Grid fluid>
           <Row>
-            <Col md={6}>
+            <Col md={6} className="no-padding">
               <div id="about-image-container">
                 <img className="about-image" src={require("./../../images/jesmine.jpg")} />
               </div>
             </Col>
-            <Col md={6}>
-              <div id="personal-info">Damilola Jesmine Omonori</div>
+            <Col md={6} className="no-padding">
+              <div id="personal-info">
+                <h2>Damilola Jesmine Omonori</h2>
+                <p>Jesmine is a graduate of Electrical Engineering, a cool headed guy who likes to hack on things</p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+              icons and the likes
             </Col>
           </Row>
         </Grid>

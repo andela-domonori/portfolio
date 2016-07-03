@@ -14,7 +14,7 @@ class Portfolio extends Component {
               list.map((item, index) => (
                 <Col
                   key={index}
-                  className="portfotio-grid" md={4}>
+                  className={`portfotio-grid-${index}`} md={4}>
                   <div className="class-with-pad">
                     <img src={require("./../../images/jesmine.jpg")} />
                     <div className="portfolio-overlay">{item}</div>

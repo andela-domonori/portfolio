@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import routes from './routes'
-import './../styles/main.styl'
+import './../styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 
 
