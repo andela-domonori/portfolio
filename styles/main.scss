@@ -1,0 +1,133 @@
+@import 'fonts';
+
+//Default variables
+$default-green: #5FB57D;
+$nav-button: #F79482;
+$background-white: #F9F9F9;
+
+@mixin transition-duration($time) {
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -o-transition-duration: $time;
+  transition-duration: $time;
+}
+
+
+//Main page lagyout
+//body
+.body-color {
+  background: $background-white;
+}
+
+#container {
+  background: $background-white;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+//Header and Nav style
+#header-name {
+  font-family: dymaxionscriptregular;
+  padding: 20px 0 45px;
+  border-bottom: 1px solid #9B9B9B;
+  margin-bottom: 5px;
+  color: $default-green;
+  font-size: 30px;
+}
+
+#nav-list {
+  padding: 15px 0 50px;
+  display: inline-flex;
+}
+
+.nav-link {
+  background: $nav-button;
+  color: white;
+  border: 1px solid $nav-button;
+  font-family: 'Bauhaus-Thin';
+}
+
+.nav-button {
+  display: block;
+  color: $default-green;
+  font-family: 'Bauhaus-Light-Light';
+  font-size: 15px;
+  width: 110px;
+  margin: 5px 20px;
+  padding: 3px 0;
+  border: 1px solid $default-green;
+  background: white;
+  border-radius: 5px;
+  text-decoration: none !important;
+
+  &:focus {
+    @extend .nav-link;
+  }
+
+  &:hover {
+    @extend .nav-link;
+  }
+}
+
+//pseudo classes
+.active {
+  background: $nav-button;
+  color: white;
+  border: 1px solid $nav-button;
+  font-family: 'Bauhaus-Thin';
+}
+
+.no-padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.class-with-pad {
+  position: relative;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//portfoio style
+// .portfotio-grid {
+//   width: 100px;
+//   height: 300px;
+// }
+
+.portfolio-overlay {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: $default-green;
+  opacity: 0.8;
+  @include transition-duration(.7s);
+  &:hover {
+    height: 90%;
+    @include transition-duration(.7s);
+  }
+}
+
+//personal info styles
+#personal-info {
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+#about-image-container {
+  background: #FFFFFF;
+  padding: 20px;
+  width: 90%;
+  height: 100%;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+}

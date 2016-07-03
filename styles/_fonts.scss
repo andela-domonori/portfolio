@@ -1,0 +1,23 @@
+//FONTS
+.style-font {
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dymaxionscriptregular';
+  src: url('./fonts/DymaxionScript-webfont.woff') format('woff');
+  @extend .style-font;
+}
+
+@font-face {
+  font-family: 'Bauhaus-Thin';
+  src: url('./fonts/bauhaus-thin.woff') format('woff');
+  @extend .style-font;
+}
+
+@font-face {
+  font-family: 'Bauhaus-Light-Light';
+  src: url('./fonts/bauhaus-light-light.woff') format('woff');
+  @extend .style-font;
+}
