@@ -20,6 +20,7 @@ $background-white: #F9F9F9;
 }
 
 #container {
+  font-family: 'Bauhaus-Light-Light';
   background: $background-white;
   text-align: center;
   margin: 0 auto;
@@ -51,8 +52,7 @@ $background-white: #F9F9F9;
 .nav-button {
   display: block;
   color: $default-green;
-  font-family: 'Bauhaus-Light-Light';
-  font-size: 15px;
+  font-size: 17px;
   width: 110px;
   margin: 5px 20px;
   padding: 3px 0;
@@ -92,12 +92,6 @@ $background-white: #F9F9F9;
   }
 }
 
-//portfoio style
-// .portfotio-grid {
-//   width: 100px;
-//   height: 300px;
-// }
-
 #overlay-caption {
   height: 100%;
 }
@@ -110,7 +104,6 @@ $background-white: #F9F9F9;
   width: 100%;
   height: 30%;
   padding: 10px 20px;
-  font-family: 'Bauhaus-Light-Light';
   background-color: $default-green;
   opacity: 0.8;
   @include transition-duration(.7s);
@@ -126,17 +119,54 @@ $background-white: #F9F9F9;
 //personal info styles
 #personal-info {
   background-color: #FFFFFF;
+  text-align: left;
   height: 100%;
+  padding: 20px;
+  font-size: 16px;
+  p {
+    margin: 30px 0;
+  }
+  h3 {
+    color: $default-green;
+  }
+  h4 {
+    color: lightgrey;
+  }
+}
+
+.about-me-box {
+  height: 600px;
 }
 
 #about-image-container {
   background: #FFFFFF;
   padding: 20px;
   width: 90%;
-  height: 100%;
 }
 
 .about-image {
   width: 100%;
   height: 100%;
+}
+
+#badges {
+  img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  h4 {
+    color: red;
+  }
+}
+
+#badge-icons {
+  display: flex;
+  justify-content: space-between;
+  div {
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+  }
 }
