@@ -22,30 +22,27 @@ class Portfolio extends Component {
   render() {
     return (
       <div>
-        <Grid fluid>
-          <Row>
-            {
-              list.map((item, index) => (
-                <Col
-                  key={index}
-                  className={`portfotio-grid-${index} no-padding`} md={4}>
-                    <div className="class-with-pad">
-                      <img src={require("./../../images/jesmine.jpg")} />
-                      <div className="portfolio-overlay">
-                        <div id="overlay-caption">
-                          <h4>{item.name}</h4>
-                          <p>{item.caption}</p>
-                        </div>
-                        <p id="overlay-content">
-                          To play the game move the alphabets one after the other. The winner wins
-                        </p>
+        <div id="portfolio-container">
+          {
+            list.map((item, index) => (
+              <div
+                key={index}>
+                  <div className="class-with-pad">
+                    <img src={require("./../../images/jesmine.jpg")} />
+                    <div className="portfolio-overlay">
+                      <div id="overlay-caption">
+                        <h4>{item.name}</h4>
+                        <p>{item.caption}</p>
                       </div>
+                      <p id="overlay-content">
+                        To play the game move the alphabets one after the other. The winner wins
+                      </p>
                     </div>
-                </Col> )
-              )
-            }
-          </Row>
-        </Grid>
+                  </div>
+              </div> )
+            )
+          }
+        </div>
       </div>
     )
   }
