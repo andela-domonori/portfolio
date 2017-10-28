@@ -8137,6 +8137,8 @@
 	
 	var _reactDom = __webpack_require__(336);
 	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	var _routes = __webpack_require__(466);
 	
 	var _routes2 = _interopRequireDefault(_routes);
@@ -8147,7 +8149,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	(0, _reactDom.render)(_routes2.default, document.getElementById('app'));
+	_reactDom2.default.render(_routes2.default, document.getElementById('app'));
 
 /***/ },
 /* 300 */

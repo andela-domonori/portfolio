@@ -8,7 +8,7 @@ module.exports = {
   entry: ['babel-polyfill', './src/app.js'],
   devtool: 'source-map',
   output: {
-    path: __dirname + '/build',
+    path: __dirname + '/docs',
     filename: 'bundle.js',
     publicPath: '/',
   },
@@ -63,7 +63,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('build/style.css', {
+    new ExtractTextPlugin('docs/style.css', {
       allChunks: true
     }),
     new HtmlWebpackPlugin({

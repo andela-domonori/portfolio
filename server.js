@@ -9,11 +9,11 @@ const config = require('./webpack.config')
 const app = express()
 const compiler  = webpack(config)
 
-app.use(express.static(__dirname + '/build'))
+app.use(express.static(__dirname + '/docs'))
 app.use(webpackMiddleware(compiler))
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build/index.html'))
+  res.sendFile(path.join(__dirname, 'docs/index.html'))
 })
 
 
