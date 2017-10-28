@@ -2,6 +2,7 @@
 
 let path = require('path')
 let ExtractTextPlugin = require('extract-text-webpack-plugin')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: ['babel-polyfill', './src/app.js'],
@@ -64,6 +65,9 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('build/style.css', {
       allChunks: true
+    }),
+    new HtmlWebpackPlugin({
+      hash: false
     })
   ]
 }
