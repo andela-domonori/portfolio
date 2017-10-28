@@ -4,7 +4,7 @@
   "description": "A personal porfolio appication",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "breadface"
