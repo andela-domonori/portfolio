@@ -8,7 +8,7 @@ import Articles from './components/Articles'
 
 let routes = (
   <Router history={browserHistory} >
-    <Route path="/" component={App}>
+    <Route path={`${process.env.PUBLIC_URL}/`} component={App}>
       <IndexRoute component={Portfolio} />
       <Route path="contact" component={Contact} />
       <Route path="about" component={About} />

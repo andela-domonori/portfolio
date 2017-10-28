@@ -28323,7 +28323,7 @@
 /* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -28357,12 +28357,14 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	console.log('process.env.PUBLIC_URL:', process.env);
+	
 	var routes = _react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/', component: _App2.default },
+	    { path: ("") + '/', component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Portfolio2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _Contact2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _About2.default }),
@@ -28371,6 +28373,7 @@
 	);
 	
 	exports.default = routes;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
 /* 467 */
