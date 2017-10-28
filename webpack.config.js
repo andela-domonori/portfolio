@@ -65,9 +65,6 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('docs/style.css', {
       allChunks: true
-    }),
-    new HtmlWebpackPlugin({
-      hash: false
     })
   ]
 }
